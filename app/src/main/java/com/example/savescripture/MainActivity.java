@@ -26,5 +26,6 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("Chapter", chapter);
         intent.putExtra("Verse", verse);
         startActivity(intent);
+        //
     }
 }
