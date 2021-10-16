@@ -5,4 +5,6 @@
     <string name="edit_verse">0</string>
     <string name="button_send">Send</string>
     <string name="little_title">Enter your favorite scripture</string>
+    <string name="load_scripture">Load Scripture</string>
+    <string name="retrieved_scripture"></string>
 </resources>
