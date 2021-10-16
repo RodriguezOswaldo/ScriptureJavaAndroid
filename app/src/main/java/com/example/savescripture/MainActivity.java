@@ -3,10 +3,12 @@ package com.example.savescripture;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         String message = editText.getText().toString();
         int chapter = Integer.parseInt(chapterInput.getText().toString());
         int verse = Integer.parseInt(verseInput.getText().toString());
+        Log.e(TAG, "About to create intent with " + message + " " + chapter + ":" + verse  );
         intent.putExtra("Book", message);
         intent.putExtra("Chapter", chapter);
         intent.putExtra("Verse", verse);
